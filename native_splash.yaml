@@ -1,0 +1,8 @@
+flutter_native_splash:
+  android: true
+  ios: true
+  web: true
+
+  background_image: "assets/background.jpg"
+  image: "assets/mac-icon.png"
+  branding: "assets/arch-linux-logo.png"
