@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_splashscreen/Screen/vidoplayer.dart';
 
 class Materi extends StatelessWidget {
   const Materi({super.key});
@@ -109,11 +110,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const VideoApp()),
-                      //   );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const VideoApp(),
+                        ),
+                      );
                     },
                     child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
