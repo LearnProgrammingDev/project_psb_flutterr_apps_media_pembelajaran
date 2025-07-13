@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'demo splash screen', home: const BottomNavBar());
+    return MaterialApp(
+      title: 'aplikasi flutter media pemelajaran',
+      home: const BottomNavBar(),
+    );
   }
 }
