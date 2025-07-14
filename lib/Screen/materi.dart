@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project_splashscreen/Screen/exercise_screen.dart';
+import 'package:project_splashscreen/Screen/quiz_screen.dart';
 import 'package:project_splashscreen/Screen/vidoplayer.dart';
 import 'package:project_splashscreen/Screen/pdfviewer.dart';
 
@@ -126,6 +128,45 @@ class _MyHomePageState extends State<MyHomePage> {
                         Text('Video Tutorial'),
                       ],
                     ),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) =>
+                                  QuizScreen(), // Navigasi ke halaman quiz
+                        ),
+                      );
+                    },
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.quiz,
+                          color: Colors.red,
+                          size: 40.0,
+                        ), // Ganti ikon menjadi quiz
+                        Text('Quiz'),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ExerciseScreen(),
+                        ),
+                      );
+                    },
+                    child: const Text("Mulai Latihan"),
                   ),
                 ],
               ),
