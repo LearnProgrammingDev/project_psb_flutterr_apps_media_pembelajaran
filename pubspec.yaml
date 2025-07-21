@@ -66,6 +66,8 @@ flutter:
     - assets/randi.jpg
     - assets/petunjuk.png
     - assets/madilog.pdf
+    - assets/bk-linux-dasar.pdf
+    - assets/tan-malaka-gerpolek.pdf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
